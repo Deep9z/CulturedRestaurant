@@ -1,4 +1,4 @@
-# Project Title
+# Cultered Restuarant Management Application
 
 This Android application that runs different interfaces: Manager, Wait Staff, Kitchen Staff, and Customers. Each section has their own functions that they can perform.
 
