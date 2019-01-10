@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.harrowedtale.culturedrestaurant">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".DisplayItemsActivity" />
+        <activity android:name=".SurveyActivity" />
+        <activity android:name=".DisplaySurveys" />
+        <activity android:name=".EditUser" />
+        <activity android:name=".DisplayUsers" />
+        <activity android:name=".DisplayCartActivity" />
+        <activity android:name=".couponGame" />
+        <activity android:name=".managerActivity" />
+        <activity android:name=".waitstaffActivity" />
+        <activity android:name=".kitchenstaffActivity" />
+        <activity android:name=".payActivity" />
+        <activity android:name=".PayByCard" />
+        <activity android:name=".Receipt" />
+        <activity android:name=".goActivity" />
+        <activity android:name=".requestsActivity" />
+        <activity android:name=".orderActivity" />
+        <activity android:name=".NewRequestActivity" />
+        <activity android:name=".MenuCategoriesActivity" />
+        <activity android:name=".orderStatusActivity" />
+        <activity android:name=".tictacGame" />
+        <activity android:name=".GameMenu" />
+        <activity android:name=".MemoryGame" />
+        <activity
+            android:name=".Snake"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SpinBottle" />
+        <activity android:name=".StartingScreenActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".SplitTipsActivity" />
+        <activity android:name=".ViewCompsActivity" />
+        <activity android:name=".UpdateAppetizers" />
+        <activity android:name=".UpdateDesserts" />
+        <activity android:name=".UpdateDrinks" />
+        <activity android:name=".UpdateEntrees" />
+        <activity android:name=".UpdateKidsEntrees" />
+        <activity android:name=".UpdateLactose" />
+        <activity android:name=".UpdateMenu" />
+        <activity android:name=".orderstatus_waitstaffactivity" />
+        <activity android:name=".ClickerGameActivity" />
+        <activity android:name=".SpecialActivity" />
+        <activity android:name=".UpdateSpecials"></activity>
+        <activity android:name=".QuizGame"></activity>
+        <activity android:name=".QuizGameGeography"></activity>
+        <activity android:name=".QuizGameMath"></activity>
+        <activity android:name=".QuizGameProgramming"></activity>
+
+    </application>
+
+</manifest>

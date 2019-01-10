@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CulturedRestaurant</string>
+    <string-array name="type">
+        <item>New Game</item>
+        <item>4 X 4</item>
+        <item>4 X 5</item>
+        <item>4 X 6</item>
+        <item>Home</item>
+    </string-array>
+
+    <string-array name="Category">
+        <item>New Game</item>
+        <item>Programming</item>
+        <item>Math</item>
+        <item>Geography</item>
+    </string-array>
+
+    <string name="mode_ready">Snake\nPress Up To Play</string>
+    <string name="mode_pause">Paused\nPress Up To Resume</string>
+    <string name="mode_lose_prefix">Game Over\nScore: </string>
+    <string name="mode_lose_suffix">\nPress Up To Play</string>
+    <string name="snake_layout_text_text"></string>
+</resources>

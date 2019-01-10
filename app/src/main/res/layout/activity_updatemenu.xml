@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backdrop">
+
+    <Button
+        android:id="@+id/editAppetizers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="90dp"
+        android:background="#ffa088"
+        android:text="Appetizers" />
+
+    <Button
+        android:id="@+id/editSpecials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
+        android:background="#ffa088"
+        android:text="Special of the Day" />
+
+    <Button
+        android:id="@+id/editEntrees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editAppetizers"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="0dp"
+        android:background="#ffa088"
+        android:text="Entrees" />
+
+    <Button
+        android:id="@+id/editKidsentrees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editAppetizers"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="166dp"
+        android:background="#ffa088"
+        android:text="Kids' Entrees" />
+
+    <Button
+        android:id="@+id/editDrinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editDesserts"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="97dp"
+        android:background="#ffa088"
+        android:text="Drinks" />
+
+    <Button
+        android:id="@+id/editDesserts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="437dp"
+        android:background="#ffa088"
+        android:text="Desserts" />
+
+    <Button
+        android:id="@+id/editLactose_intolerant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="227dp"
+        android:background="#ffa088"
+        android:text="Lactose Intolerant" />
+</RelativeLayout>

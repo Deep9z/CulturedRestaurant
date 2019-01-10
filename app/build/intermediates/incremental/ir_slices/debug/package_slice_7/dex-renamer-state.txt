@@ -1,0 +1,4 @@
+#Sun Nov 25 23:55:00 CST 2018
+base.0=C\:\\Users\\Damien\\Downloads\\Cultured_11_21_2018\\Cultured_11_21_2018\\CulturedRestaurant\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex

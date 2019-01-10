@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.harrowedtale.culturedrestaurant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.harrowedtale.culturedrestaurant.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.harrowedtale.culturedrestaurant.customerActivity"
+            android:parentActivityName="com.harrowedtale.culturedrestaurant.MainActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.DisplayItemsActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.SurveyActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.DisplaySurveys" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.EditUser" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.DisplayUsers" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.DisplayCartActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.couponGame" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.managerActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.waitstaffActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.kitchenstaffActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.payActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.PayByCard" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.Receipt" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.goActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.requestsActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.orderActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.NewRequestActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.MenuCategoriesActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.orderStatusActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.tictacGame" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.GameMenu" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.MemoryGame" />
+        <activity
+            android:name="com.harrowedtale.culturedrestaurant.Snake"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.SpinBottle" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.StartingScreenActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.QuizActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.SplitTipsActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.ViewCompsActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.UpdateAppetizers" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.UpdateDesserts" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.UpdateDrinks" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.UpdateEntrees" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.UpdateKidsEntrees" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.UpdateLactose" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.UpdateMenu" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.orderstatus_waitstaffactivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.ClickerGameActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.SpecialActivity" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.UpdateSpecials" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.QuizGame" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.QuizGameGeography" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.QuizGameMath" />
+        <activity android:name="com.harrowedtale.culturedrestaurant.QuizGameProgramming" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.harrowedtale.culturedrestaurant.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".customerActivity"
+    android:background="@drawable/backdrop">
+
+    <RelativeLayout
+        android:layout_width="214dp"
+        android:layout_height="435dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#2000"
+        tools:layout_editor_absoluteY="77dp">
+
+        <Button
+            android:id="@+id/bFoodMenu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:background="#ffa088"
+            android:text="Food Menu" />
+
+        <Button
+            android:id="@+id/bRequests"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="160dp"
+            android:background="#ffa088"
+            android:text="Requests" />
+
+        <Button
+            android:id="@+id/bMerchandiseMenu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="378dp"
+            android:background="#ffa088"
+            android:text="Merchandise Menu" />
+
+        <Button
+            android:id="@+id/bPay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="72dp"
+            android:background="#ffa088"
+            android:text="Pay" />
+
+        <Button
+            android:id="@+id/bOrderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="234dp"
+            android:background="#ffa088"
+            android:text="Order Status" />
+
+
+        <Button
+            android:id="@+id/bViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="86dp"
+            android:background="#ffa088"
+            android:text="View Cart" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="#ffa088"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="113dp"
+                android:layout_height="match_parent"
+                android:contentDescription="nav_header_desc"
+                app:srcCompat="@drawable/logo" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="435dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="218dp"
+            android:layout_marginBottom="0dp"
+            android:background="#2000"
+            tools:layout_editor_absoluteY="77dp">
+
+            <Button
+                android:id="@+id/bGames"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="0dp"
+                android:background="#ffa088"
+                android:text="Games" />
+
+            <Button
+                android:id="@+id/bCouponGame"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginEnd="0dp"
+                android:background="#ffa088"
+                android:text="Coupon Game" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

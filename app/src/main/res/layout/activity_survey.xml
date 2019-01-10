@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.harrowedtale.culturedrestaurant.SurveyActivity">
+
+    <TextView
+        android:id="@+id/ratingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="We hope you enjoyed your meal with us today"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFD700"
+        android:progressTint="#FFD700"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1"/>
+
+    <TextView
+        android:id="@+id/tvRatingScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Awesome"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:hint="Tell us about your experience"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/bSendSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffa088"
+        android:text="Send Feedback" />
+
+    <Button
+        android:id="@+id/bSkipSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip Survey"
+        android:layout_marginTop="10dp"
+        android:background="#ffa088"
+        />
+
+
+</LinearLayout>

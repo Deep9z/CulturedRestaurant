@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".managerActivity"
+    android:background="@drawable/backdrop">
+
+    <Button
+        android:id="@+id/bViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/bSplitTips"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-126dp"
+        android:background="#ffa088"
+        android:text="View Staff" />
+
+
+    <Button
+        android:id="@+id/bSplitTips"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="139dp"
+        android:background="#ffa088"
+        android:text="Split Tips" />
+
+    <Button
+        android:id="@+id/bEditUsers"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="211dp"
+        android:background="#ffa088"
+        android:text="Edit Staff" />
+
+    <Button
+        android:id="@+id/bViewSurveys"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="171dp"
+        android:background="#ffa088"
+        android:text="View Surveys" />
+
+    <Button
+        android:id="@+id/bViewComps"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="100dp"
+        android:background="#ffa088"
+        android:text="View Comps" />
+
+    <Button
+        android:id="@+id/bEditMenu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="28dp"
+        android:background="#ffa088"
+        android:text="Edit Menu" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="15dp"
+        android:text="Manager Options:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</RelativeLayout>
