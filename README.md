@@ -32,6 +32,7 @@ Customers:
 
 ## Authors
 
+* **Adrian LaCour**
 * **Greg Faaborg**
 * **Dania Chavez**
 * **Damien Wiggins**
